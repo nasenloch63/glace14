@@ -80,6 +80,13 @@ export default function LegalPage() {
             </div>
 
             <div>
+              <h2 className="text-body-base font-emphasis text-foreground mb-3">Web Development</h2>
+              <p>
+                <a href="https://www.naser-solutions.de" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-muted-foreground transition-colors">Web Development by Naser Solutions</a>
+              </p>
+            </div>
+
+            <div>
               <h2 className="text-body-base font-emphasis text-foreground mb-3">Disclaimer</h2>
               <p className="mb-3">
                 <strong className="text-foreground">Liability for Content:</strong> The content of our pages has been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our own content on these pages under general law. However, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
