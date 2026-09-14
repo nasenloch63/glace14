@@ -256,9 +256,10 @@ export default function Home() {
               {t("cta.button")}
             </AnimatedButton>
             <a
-              href="https://www.swisstransfer.com/d/01ee187f-866d-4999-852c-a055bf039ac4"
+              href="/glace14-brochure.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={t("cta.brochureAria")}
               className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-body-sm font-emphasis rounded-sm transition-all duration-300 hover:bg-foreground/90 hover:shadow-lg active:scale-[0.98]"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0" aria-hidden="true">

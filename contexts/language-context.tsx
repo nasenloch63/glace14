@@ -104,6 +104,7 @@ const translations = {
     "cta.description": "Interested in using our space for your next project? Get in touch to discuss availability and rates.",
     "cta.button": "Book Now",
     "cta.brochure": "Download Studio Brochure",
+    "cta.brochureAria": "Open the Glace14 brochure PDF in a new tab",
     
     // Contact
     "contact.title": "Get in touch",
@@ -255,6 +256,7 @@ const translations = {
     "cta.description": "Réservez et payez instantanément avec notre calendrier en ligne. N'hésitez pas à nous contacter pour toute demandes particulières ou de devis spécifiques!",
     "cta.button": "Réserver",
     "cta.brochure": "Télécharger la Brochure",
+    "cta.brochureAria": "Ouvrir la brochure Glace14 au format PDF dans un nouvel onglet",
     
     // Contact
     "contact.title": "Nous Contacter",
