@@ -324,14 +324,32 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = localStorage.getItem("glace14-language") as Language
-    if (stored && (stored === "en" || stored === "fr")) {
+    if (stored === "en" || stored === "fr") {
       setLanguageState(stored)
+      document.documentElement.lang = stored
+      return
     }
+
+    // Prefer French for French-speaking locales, including France and Switzerland.
+    // If the browser does not expose a locale, French remains the safe default.
+    const locales = typeof navigator !== "undefined"
+      ? [navigator.language, ...navigator.languages]
+      : []
+    const frenchLocalePattern = /^fr(?:[-_](?:FR|CH|BE|CA|LU|MC))?$/i
+    const detectedLanguage: Language = locales.some((locale) => frenchLocalePattern.test(locale))
+      ? "fr"
+      : locales.length > 0
+        ? "en"
+        : "fr"
+
+    setLanguageState(detectedLanguage)
+    document.documentElement.lang = detectedLanguage
   }, [])
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang)
     localStorage.setItem("glace14-language", lang)
+    document.documentElement.lang = lang
   }
 
   const t = (key: string): string => {
